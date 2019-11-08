@@ -10,12 +10,18 @@ html, body {
   font-family: 'Roboto', sans-serif;
 }
 
+
+header{
+  border-bottom: 3px dotted gray;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: 'Indie Flower', cursive;
 }
 
 h1 {
   font-size: 4rem;
+  padding: 2% 0;
 }
 
 h2 {
@@ -32,6 +38,10 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+
+  @media @mobile{
+    width: 100%;
+  }
 }
 
 img {
@@ -43,4 +53,9 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+
+  @media @mobile{
+    width: 99%;
+  }
 }
+

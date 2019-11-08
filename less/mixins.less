@@ -1,1 +1,25 @@
 // Mixins in here
+
+.flex(@justify: center){
+    display: flex;
+    justify-content: @justify;
+}
+
+@keyframes hover{
+    from {background-color:lightblue;}
+    to {background-color: silver;}
+}
+
+.button(@textColor: white, @backgroundColor: lightblue){
+    color: @textColor;
+    background-color: @backgroundColor;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 4% 0;
+    
+    &:hover{
+        animation-name: hover;
+        animation-duration: 1s;
+    }
+}
