@@ -1,1 +1,35 @@
 // Navigation Styles here
+.headContainer{
+    .flex(space-between);
+    width: 100%;
+    align-items: center;
+    color: @font-color;
+    border-bottom: 2px dashed silver;
+
+    @media @mobile{
+        flex-direction: column;
+        padding: 0 4%;
+    }
+
+    p{
+        font-family: 'Indie Flower', cursive;
+        padding-bottom: 0px;
+        font-size: 3rem;
+
+        @media @mobile{
+            text-align: center;
+        }
+    }
+    nav{
+        .flex(space-between);
+        align-items: flex-end;
+        width: 32%;
+        font-size: 1.5rem;
+        margin: 3%;
+
+        @media @mobile{
+            width: 100%;
+        }
+    }
+
+}
